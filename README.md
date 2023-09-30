@@ -1,5 +1,5 @@
 ## Members
-Kyle Houchin, Computer Engineering Student (2027)
+Kyle Houchin, Computer Engineering and Music Technologies, 2027
 kylehouchin@vt.edu
 
 ## Repo Link
@@ -9,7 +9,7 @@ kylehouchin@vt.edu
 {% include youtube.html video="miltuOLWDFQ" %}
 
 ## Mentor
-Peter, Electrical and Computer Engineering Student (2025)
+Peter Costescu, Chip-Scale Integration and Micro-Nanosystems, 2025
 
 ## Current Status
 Designing Circuits
