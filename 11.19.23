@@ -9,7 +9,15 @@ The intention of the preamp is to prep the signal for the effects processing uni
 The preamp consists of a noninverting op amp that goes straight into an inverting op amp. We chose this order because noninverting op amps have a high input impedance due to the signal input going straight into
 the op amp's noninverting input. A high input impedance is important because high current impedances minimize the effects that driving the speaker (the load) cause on the input signal [2]. High input impedances allow
 the signal transferred to the circuit to be more accurate to the signal input [1][2]. The output impedance on guitars genrally is high; connecting output impedance of a guitar to an amp with a much higher input impedance
-will allow most of the signal to be transferred [3]. We do not want to match the impedances because matching impedances considers maximizing power transfer. In order to maximize power transfer, we need a high input impedance.
+will allow most of the signal to be transferred [3]. We do not want to match the impedances because matching impedances considers maximizing power transfer. In order to signal (our signal voltage) transfer, we need a high input impedance.
+
+Randy Merrill:
+Impedance bridging: Load impedance is much larger than the source impedance, maximizing the voltage transfer through the connection and minimizes the current draw
+from the source.
+Impedance matching: Output and input impedances are the same, maximizing the power transfer across the connection.
+
+/////////
+research how to tell calculate the exact impedance in an inverting and noninverting op amp.
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 A low imput impedance allows the load to affect the signal. For example, multimeters (the load in this example) have a high impedance so connecting the probs to the circuit does not change the circuit by adding a new route for electrons
