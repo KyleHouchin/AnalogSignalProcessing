@@ -12,8 +12,8 @@ the signal transferred to the circuit to be more accurate to the signal input [1
 will allow most of the signal to be transferred [3]. We do not want to match the impedances because matching impedances considers maximizing power transfer. In order to maximize power transfer, we need a high input impedance.
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-A low imput impedance allows the load to affect the signal. For example, multimeters have a high impedance so connecting the probs to the circuit does not change the circuit by adding a new route for electrons
-to travel through. A high impedance allows the signal to remain with the same qualities through through amp, but with an amplified signal level. [2]
+A low imput impedance allows the load to affect the signal. For example, multimeters (the load in this example) have a high impedance so connecting the probs to the circuit does not change the circuit by adding a new route for electrons
+to travel through (the potential change would be the loading effects in this example). A high impedance allows the signal to remain with the same qualities through through amp, but with an amplified signal level. [2]
 
 which takes away from our signal.
 
