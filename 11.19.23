@@ -19,14 +19,40 @@ Impedance matching: Output and input impedances are the same, maximizing the pow
 /////////
 research how to tell calculate the exact impedance in an inverting and noninverting op amp.
 
+Impedence in a noninverting op amp is very high because the input is completely separated from the other connections around the op amp and its own path of travel is
+the noninverting input which has idealy has infinite impedance. Impedence in an inverting op amp is equal to that of the resistor before the op amp's inverting input.
+This is because the current can travel around the op amp to its output because of the way inverting op amps are set up.
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 A low imput impedance allows the load to affect the signal. For example, multimeters (the load in this example) have a high impedance so connecting the probs to the circuit does not change the circuit by adding a new route for electrons
 to travel through (the potential change would be the loading effects in this example). A high impedance allows the signal to remain with the same qualities through through amp, but with an amplified signal level. [2]
+
+Inverting Amplifiers are more stable because they have a higher noise gain.
+
+Op amps have a low output impedence.
 
 which takes away from our signal.
 
 the matching the input impedance of the guitar to that of the circuit
 can lower the interferrance and noise in the circuit and output through the speaker. An impedance mismatch can cause noise in the circuit.
+
+
+Power Amp:
+-We are building a buffer or voltage follower in order to amplify our current to drive the speaker. We are choosing to not use an op amp buffer because they are limited
+to smaller current inputs. We are building our own buffer with transistors.
+
+We are starting by building a clas A amplifier. In order to prevent the negative voltage from being cutoff in our signal, we are going to shift up the signal so it's
+all positive. This will limit the speakers range of motion because it forces the neutral position of the on speaker to be pushed out a bit, and this may cause clipping
+when driving the speaker. An audio transformer can be used to get rid of the DC offset before driving the speaker.
+
+LOOK INTO POWER LIMIT OF AN AVERAGE GUITAR AMP. we want to stay half below the maximum. How close to the maximum power dissapation can we be?
+
+We are choosing to not use a class A amplifier because 
+
+Audio transformer gets rid of DC offset.
+
+
+
 
 [1] Impedance out of different untilities:
 https://gollihurmusic.com/ohms-impedance-from-the-input-perspective/#:~:text=HIGH%20Impedance%2C%20such%20as%20most,and%20high%20impedance%20output%20jacks.
