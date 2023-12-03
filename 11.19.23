@@ -4,38 +4,50 @@ OVERVIEW:
 The design of our amplifier consists of a preamp, effects processing unit, and power amp.
 The preamp converts the signal into a usable level, the effects amp alters the quality and effects on the sound, and the power amp boosts the level up to a volume that could be heard out of a speaker.
 
-PREAMP DESIGN:
-The intention of the preamp is to prep the signal for the effects processing unit.
-The preamp consists of a noninverting op amp that goes straight into an inverting op amp. We chose this order because noninverting op amps have a high input impedance due to the signal input going straight into
-the op amp's noninverting input. A high input impedance is important because high current impedances minimize the effects that driving the speaker (the load) cause on the input signal [2]. High input impedances allow
-the signal transferred to the circuit to be more accurate to the signal input [1][2]. The output impedance on guitars genrally is high; connecting output impedance of a guitar to an amp with a much higher input impedance
-will allow most of the signal to be transferred [3]. We do not want to match the impedances because matching impedances considers maximizing power transfer. In order to signal (our signal voltage) transfer, we need a high input impedance.
-
-Randy Merrill:
+CONCEPTS TO UNDERSTAND:
+Notes from my converstaions with Randy Merrill, a Mastering Engineer with Sterling Sound:
 Impedance bridging: Load impedance is much larger than the source impedance, maximizing the voltage transfer through the connection and minimizes the current draw
 from the source.
 Impedance matching: Output and input impedances are the same, maximizing the power transfer across the connection.
 
-/////////
-research how to tell calculate the exact impedance in an inverting and noninverting op amp.
+ANALYSIS ON INVERTING AND NON-INVERTING OP-AMP IMPEDANCES:
+Impedance in a noninverting op amp is very high because the input is completely separated from the other connections around the op amp, and its only path of travel is
+the noninverting input which has idealy has infinite impedance. Impedance in an inverting op amp is equal to that of the resistor before the op amp's inverting input.
+This is because the current can travel around the op amp's inverting input that has infinite impedance.
 
-Impedence in a noninverting op amp is very high because the input is completely separated from the other connections around the op amp and its own path of travel is
-the noninverting input which has idealy has infinite impedance. Impedence in an inverting op amp is equal to that of the resistor before the op amp's inverting input.
-This is because the current can travel around the op amp to its output because of the way inverting op amps are set up.
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
+LOADING EFFECTS:
 A low imput impedance allows the load to affect the signal. For example, multimeters (the load in this example) have a high impedance so connecting the probs to the circuit does not change the circuit by adding a new route for electrons
 to travel through (the potential change would be the loading effects in this example). A high impedance allows the signal to remain with the same qualities through through amp, but with an amplified signal level. [2]
 
-Inverting Amplifiers are more stable because they have a higher noise gain.
+PREAMP DESIGN:
+The intention of the preamp is to prep the signal for the effects processing unit. The preamp consists of a noninverting op amp that goes straight into an inverting op amp.
+Both op amps are designed to have a closed-loop gain of five, resulting in a total gain a 25 volts.
 
-Op amps have a low output impedence.
+We chose this order because noninverting op amps have a high input impedance due to the signal input going straight into
+the op amp's noninverting input. A high input impedance maximizes the voltage singal transfer from the guitar output into our circuit input [2]. High input impedances allow
+the signal transferred to the circuit to be more accurate to the from the guitar [1][2]. The output impedance on guitars genrally is high; connecting output impedance of a guitar to an amp with a much higher input impedance
+will allow most of the signal to be transferred [3]. We do not want to match the impedances because matching impedances produces maximizing power transfer, and poor signal transer.
+
+After the noninverting op amp, we go straight into an inverting op amp because of a couple reasons. For one, 
+inverting Amplifiers are considered more stable because they have a higher noise gain than non inverting op amps [5]. Second, using a second type of op amp would
+help to better achieve the learning goals of this project. Op amps have low output impedance, and ideal op amps have an output impedance of zero [6]. The low output
+impedance allows us to put two op amps in series and still design for a high voltage transfer. Considering voltage transfer, the higher the output impedance, the
+less voltage is transfered. 
+
+
+
+
+
+//
+Impedance matching is important if the wavelength of the frequency is less than the length of the cable the voltage signal is being run through. When dealing with
+audio frequencies, the wavelength are enormous (lambda = (speed of light)/frequency). However FM and AM frequencies are a lot smaller. Energy in cables are not dissipated
+as heat, the energy is dissipated into the other end of the cable.
 
 which takes away from our signal.
 
 the matching the input impedance of the guitar to that of the circuit
 can lower the interferrance and noise in the circuit and output through the speaker. An impedance mismatch can cause noise in the circuit.
-
+//
 
 Power Amp:
 -We are building a buffer or voltage follower in order to amplify our current to drive the speaker. We are choosing to not use an op amp buffer because they are limited
@@ -65,4 +77,10 @@ https://www.sciencedirect.com/topics/computer-science/maximum-power-transfer#:~:
 
 [4] Difference between maximum power transfer and efficiency:
 https://ieeexplore.ieee.org/document/7695800
+
+[5] Inverting Op Amps are more stable because of their higher noise gain
+https://e2e.ti.com/support/amplifiers-group/amplifiers/f/amplifiers-forum/956865/opa547-comparison-between-inverting-and-non-inverting-configuration
+
+[6] Op amps have low output impedance
+https://www.collimator.ai/reference-guides/what-is-output-impedance-of-an-op-amp#:~:text=They%20have%20a%20high%20input,loads%20with%20minimal%20signal%20degradation.
 
