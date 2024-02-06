@@ -6,3 +6,18 @@ I had a friend ask me recently if a speaker individually played the different so
 Waves add together through a concept called "superposition."
 Let two waves be of the same amplitude: Waves can add constructively, i.e. crest + crest = taller crest; waves also add destructively, i.e. crest + trough = no signal.
 If these waves were not lined up in a perfectly constructive or destructive wave, a mix of points of the wave would be amplified and lessend.
+
+A speaker does not output the signal from a high hat, bass guitar, and vocalist individually. They are combined together to one wave which is simultaneously constructive and destructive.
+This wave is not a clean sine wave, it is rugged blend of the individual sound waves from each instrument.
+
+While a speaker needs to be driven by current to have the ability to produce sound, it needs a voltage input to move the speaker cone. The speaker cone displaces air, the medium for the sound, creating sound waves.
+The speaker cone's position will be the displacement from the resting position (0 volts) in its voltage input. The speaker does not move cleanly in most cases, it will follow the blended conglomerate wave input through the speaker.
+Ever seen a subwoofer cone thump? Those very noticable displacements are from high amplitude (loud) signals sent through it.
+
+Quick side note:
+Acoustic guitars amplify sound through the resonant body of the guitar. The strings vibrate the bridge of the guitar, which vibrate the flexible top-wood on the body of the guitar.
+The top wood vibrates the air which then comes out of the port (the hole in the guitar) as music.
+
+The same happens with speaker cabinets. The small little speaker-cone/oscillator combos found in electronics kits tend to produce a sharper and plasticy sounding noise. Attaching the device to a resonate body changes the frequency
+that the air inside the box resonates at. Making the box bigger should lower the resonate frequency if the box is hollow and rectanglar-prism-shaped. This air is pushed out of a port which may be a hole in the back of the
+speaker cabinet, or even come out of the front where the oscillating speaker cone is.
