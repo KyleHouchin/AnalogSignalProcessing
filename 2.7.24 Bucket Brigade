@@ -1,0 +1,14 @@
+The Bucket Brigade (analog shift registers; BBD) is heavily used in Flanger, Chorus, and Delay guitar pedals.
+Back in the old days, firemen had to form a line of buckets and pour the water from bucket to bucket to get the water closer to the fire.
+Firemen can pour the water slower, this represents the BBD's capability to delay the delivery of the signal. Of course, as firemen are transfering the water from bucket to bucket, water may spill out.
+Voltage leaks as it sits in the buckets longer, making BBD's not the best for long delay pedals. 
+
+This feature highlights an important defining feature of analog devices. Analog devices have some unpredictability and are under non-ideal circumstances. In order to emulate an anolog effect with a digital processor,
+we would need to create non-ideal circumstances which is difficult because these circumstances may not follow a particular pattern. These circumstances happen because of the laws of energy and whatever else they depend on.
+It is extremely complicated. Analog devices are bound by the laws of our world, while digital devices are bound by the capability of the hardware and the creativity of the developer.
+Another defining feature of analog devices is that analog devices are infinitely precise, while digital devices can only reach let's say .00000001 precision. Digital devices are precise enough to sound smooth, but will never
+reach the smoothness and warmth of analog devices.
+
+
+
+https://www.premierguitar.com/gear/behind-the-bucket-brigade
