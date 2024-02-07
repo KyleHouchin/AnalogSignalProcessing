@@ -1,0 +1,23 @@
+If you can understand how a diode works, you can understand how a transistor works.
+-Peter
+
+A diode is constructed of a two electrodes, an anode and a cathode. The anode is made from a P-type material and the cathode is made from an N-type material.
+The P-type region is comprised of holes (the absense of electrons makes positive), and the N-type region consists of electrons.
+The P-type region will be an element with 3 electrons and the N-type region will be an element with 5 electrons.
+A semiconductor (material that conducts in certain states), in this case Silicon, is between these two regions. The region in the middle is called the depletion region.
+
+In order to make all this stuff make sense, let's jump back in time to World War I. I want to talk about trench warefare.
+Picture two trenches, and between these two trenches is no mans land. No soldier from either the good or bad side wants to cross this region.
+If reinforcements are sent to the good side (positive voltage applied), the good troops have cover fire and can push closer to no man's land.
+The same concept pertains to the bad side (negative).
+If positive voltage is towards the holes in the P-type side and negative voltage is towards the electrons in the N-type side, the holes and electrons
+are pushed closer and closer to the depletion region; the more voltage applied, the smaller the depletion region, and the faster holes and electrons will jump across the depletion region.
+In the case of LEDs, this process creates photons (light); Photons are created when elements in groups 3 and 5 mix.
+
+Current will not flow through the diode if the voltage applied is backwards. When negative voltage is towards the P-type side, it is like sending soldiers from the opposition in a flank attack,
+the P-type soldiers have to turn around and fight the flanking enemies-no man's land becomes larger.
+Negative voltage applied to the positive side attracts the holes towards the negative electrons and away from the depletion region.
+Positive voltage applied to the positive side repulses the holes towards the depletion region, shrinking the depletion region and allowing current to flow through the diode.
+
+
+Transistors.
