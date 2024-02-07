@@ -19,5 +19,21 @@ the P-type soldiers have to turn around and fight the flanking enemies-no man's 
 Negative voltage applied to the positive side attracts the holes towards the negative electrons and away from the depletion region.
 Positive voltage applied to the positive side repulses the holes towards the depletion region, shrinking the depletion region and allowing current to flow through the diode.
 
+Uses:
+You can use diodes to set a maximum voltage. There is a overflow hole in most sinks. The sink fills with water normally until the water fills up to the overflow hole. No matter the amount of water that comes
+out of the sink, the water in the sink stops getting higher because the extra pours into the overflow hole. Diodes can be used for a similar purpose with alternating current. The signal will be normal until there
+is a great enough voltage difference across the diode that it turns on. Once the diode turns on the voltage is clipped; the signal will appear normal when the diode is off and appear clipped when the diode is on.
+
 
 Transistors.
+The two main types of transistors are NPN and PNP. The side notated with an arrow is called the emitter. The other end is called a collector. The middle is called the base.
+We can compare a transistor to a water valve. The base is the valve; as voltage is applied to the base, the valve is opened and more and more water (current) is let through at greater speeds. The current
+travels from the collector to the emitter. For the transistor to be considered on, the transistor needs to have a voltage applied across the collector and a emitter. If you turn off a sink, the water goes all the
+way back down the pipes, if you keep the sink barely on, the water sits right at the faucet ready to pour out.
+
+Uses:
+We are using a Class B setup of transistors to gain up current in order to drive our speaker. The Class B setup uses two transistors-one to gain the positive signal and one to gain the negative signal. As we described with diodes,
+the voltage needs to be applied in the correct way so that no man's land shrink and current can flow across the diode. As voltage is positive, the positive transistor is turned on. As voltage is negative, the negative transistor is turned on.
+(NEEDS WORK)
+
+
