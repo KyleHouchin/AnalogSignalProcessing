@@ -9,6 +9,9 @@ The P-type region is made up with mostly Silicon, but is doped with a small numb
 The N-type region is made up with mostly Silicon, but is dope with a small number of other atoms with one extra electron that fits nicely with Silicon: this yields a negative charge.
 The region in the middle of the two semiconductors is called the depletion region.
 
+Video that goes into how diodes work at about 6 minutes:
+https://www.youtube.com/watch?v=AF8d72mA41M
+
 In order to make all this stuff make sense, let's jump back in time to World War I. I want to talk about trench warefare.
 Picture two trenches, and between these two trenches is no mans land. No soldier from either the good or bad side wants to cross this region.
 If reinforcements are sent to the good side (positive voltage applied), the good troops have cover fire and can push closer to no man's land.
