@@ -4,7 +4,10 @@ If you can understand how a diode works, you can understand how a transistor wor
 A diode is constructed of a two electrodes, an anode and a cathode. The anode is made from a P-type material and the cathode is made from an N-type material.
 The P-type region is comprised of holes (the absense of electrons makes positive), and the N-type region consists of electrons.
 The P-type region will be an element with 3 electrons and the N-type region will be an element with 5 electrons.
-A semiconductor (material that conducts in certain states), in this case Silicon, is between these two regions. The region in the middle is called the depletion region.
+Both P-type and N-type regions are semiconductors (material that conducts in certain states), in this case Silicon.
+The P-type region is made up with mostly Silicon, but is doped with a small number of other atoms with one fewer electron that fits nicely with Silicon: this yields a positive charge.
+The N-type region is made up with mostly Silicon, but is dope with a small number of other atoms with one extra electron that fits nicely with Silicon: this yields a negative charge.
+The region in the middle of the two semiconductors is called the depletion region.
 
 In order to make all this stuff make sense, let's jump back in time to World War I. I want to talk about trench warefare.
 Picture two trenches, and between these two trenches is no mans land. No soldier from either the good or bad side wants to cross this region.
