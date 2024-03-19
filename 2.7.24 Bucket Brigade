@@ -10,7 +10,58 @@ Another defining feature of analog devices is that analog devices are infinitely
 reach the smoothness and warmth of analog devices. Analog devices (capacitors) leak, while digital devices do not.
 
 Samples are kind of like legos. The more legos a lego sculture has, the more realistic lit looks. The more audio samples, the more realistic the audio sounds.
+"he general principle with digital audio sampling is that the sample rate should be three to four times the highest frequency to be reproduced, if not more. 
+So, if a signal processor is intended to process and output a signal whose content goes as high as 5 kHz, it should not sample the audio signal fewer than 20,000 times per second (20 kHz)."
 
+Eddie and Ethan knowledge:
+(
+Bandwidth: range of frequencies that can pass through a circuit with minimal attenuation (minimal reduction of volume). Width of frequencies that can pass through.
+Something is above the point of minimum attenuation and is part of the pass band is at least 50% of the power or 70% of the Voltage signal passes through. (P=V^2/R --> 70%^2 --> .707^2 is around 50% power). (.707 reminds me of root-mean-squared that peter was talking to me about)
+The width of a pass band is called the bandwidth.
+Human hearing is about a bandwidth of 20kH.
+Sample Rate: how often a sample is measured per unit of time.
+You can attenuate a circuit by using a op amp with a gain of less than 1.
+)
 
+Issue with higher sample rates and a bucket brigade:
+Higher sample rates improve the sound quality and bandwidth, but leave less "delay time" for bucket brigade to process each sample.
+
+Solution?:
+The Bucket Brigade uses a clock, every tick passing the sample to the next stage. It uses essentially two lines of buckets that alternate between passing the sample along the line.
+
+Excerpt that compares the setup of different brands of chorus/flanger pedals:
+"When these alternating interleaved samples reach the output of their respective path, they are combined to provide a continuous, seamless stream of samples (see Fig. 2). 
+Some pedals (such as the Boss BF-2 Flanger) simply link the two output pins together directly, while others (like Electro-Harmonix’s Deluxe Electric Mistress) use a pair of equal-value resistors to electronically
+mix the two paths together. Still others (like the old A/DA Flanger) use a trimpot to perfectly balance the two outputs. In the latter example, not only does the more precise balancing yield a more faithful 
+representation of the input signal, but it also serves to better cancel out artifactual noise from the clock—kind of like a humbucker in a chip!"
+
+BBDs with less than 1024 stages are generally used for chorus, flanging, vibrato; and BBDs with more than 1024 stages are generally used for delays.
+A route to get more stages, therefore more "delay time" would be to increase the number of stages. Different chips can be used, and even multiple chips cascaded together and connected with the same clock can be used.
+Combining multiple BBDs may affect audio quality. You also need a bias voltage for the signal to get to the other side of the BBD. Trimpots are included in circuit to minimize distortion in the bias voltage.
+Trimpots can also be found where the feedback is returned in the BBD to control the amount of feedback wanted in the pedal; they are also used to control the delay time of the BBD.
+
+When signal goes through a BBD, it loses some signal compared to the dry signal. So trimpots can be found after each BBD stage which control a gain stage to boost the signal back to normal before the next BBD.
+Shorter and longer delays can be produced by setting the clock faster or slower. If you make the clock too fast or too slow, the signal can get corrupted.
+BBD's use a capacitor to make the square clock pulse triangular. If the frequency is too low, the capacitance has no effect; if the frequency is high enough, the capacitor has some lag.
+
+I guess you can buffer a signal to help drive a BBD to a higher clock-rate or to overcome capacitance. Buffering means to increase the current while keeping the voltage constant.
+
+Issues:
+Clock Signal can leak through the BBD to the speakers. Aliasing noise, high frequency content riding on top of the signal, can also be present.
+Fixes: (Note: I do not believe all of these are used at once to fix each problem.)
+IMPORTANT: Low-pass filter placed before and after the BBD to eliminate frequencies above the highest intended frequency of the signal. I believe this is always used for every BBD
+Gating the end of the BBD to remove any noise when you stop playing.
+Treble manipulation emphasizes treble before and after the BBD to eliminate any hiss or whine from the clock.
+Companding is when you compress and expand the signal.
+Output balancing uses trimpots to balance the BBD levels to remove clock noise.
+-The warmth guitar players describe getting from analog delay pedals is the use of low pass filters to limit the frequency range. This can be emulated digitally as well.
+
+Different Brands of Chips:
+"Certainly the earliest Matsushita chips (like the MN3001 and MN3002 used in the Boss CE-1, and the MN3010 used in the A/DA Flanger) were quieter and could be clocked faster 
+(because they had a lower clock-pin capacitance). But the quality of the signal in any of the various issues is still very much a matter for debate."
+"recall that BBDs can’t pass an audio signal unless it’s sitting atop a DC bias voltage (derived from the power supply)."
+Later Matsushita chips were designed to use around 7 volts of the 9 volts of battery. This would mitigate any drift the bias voltage as the battery aged. 
 
 https://www.premierguitar.com/gear/behind-the-bucket-brigade
+
+-Finished article
